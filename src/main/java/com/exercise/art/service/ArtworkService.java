@@ -1,5 +1,6 @@
 package com.exercise.art.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,5 +28,10 @@ public class ArtworkService {
 	public Optional<Artwork> findByDescription(String description) {
 
 		return artworkRepo.findByDescription(description);
+	}
+	
+	public List<Artwork> findByArtistName(String name){
+		
+		return artworkRepo.findByArtistName(name);
 	}
 }

@@ -1,5 +1,6 @@
 package com.exercise.art.repository;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -13,5 +14,7 @@ public interface ArtworkRepo extends JpaRepository<Artwork, Long>{
 	public Optional<Artwork> findByName(String name);
 	
 	public Optional<Artwork> findByDescription(String description);
+	
+	public List<Artwork> findByArtistName(String name);
 
 }
