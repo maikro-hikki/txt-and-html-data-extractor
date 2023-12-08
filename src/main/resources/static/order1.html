@@ -1,0 +1,117 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Order Page</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 20px;
+			}
+			header {
+				text-align: center;
+				padding: 10px;
+				background-color: #f2f2f2;
+			}
+			section {
+				margin-top: 20px;
+			}
+			.item {
+				margin-bottom: 20px;
+				border-bottom: 1px solid #ddd;
+				padding-bottom: 10px;
+			}
+			.item img {
+				max-width: 300px;
+				height: auto;
+			}
+			.summary {
+				margin-top: 20px;
+				text-align: right;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Order #<span id="orderNumber">7532</span></h1>
+		</header>
+
+		<section id="buyerInfo">
+			<h2>Buyer Information</h2>
+			<p>Name: <span id="buyerName">John Doe</span></p>
+			<p>Address: <span id="buyerAddress">123 Main St, Cityville</span></p>
+		</section>
+
+		<section id="orderItems">
+			<h2>Order Items</h2>
+			<div id="itemsContainer">
+				<div class="item">
+					<img src="path/to/your/images/10Dec-img4321-James.jpg" />
+					<p>10Dec-img4321-James.jpg</p>
+					<p>Price: $5</p>
+				</div>
+				<div class="item">
+					<img src="path/to/your/images/11Dec-img5432-Frank.jpg" />
+					<p>11Dec-img5432-Frank.jpg</p>
+					<p>Price: $5</p>
+				</div>
+				<div class="item">
+					<img src="path/to/your/images/11Dec-img4321-David.jpg" />
+					<p>11Dec-img4321-David.jpg</p>
+					<p>Price: $5</p>
+				</div>
+				<div class="item">
+					<img src="path/to/your/images/10Dec-Ax0215678-David.jpg" />
+					<p>10Dec-Ax0215678-David.jpg</p>
+					<p>Price: $5</p>
+				</div>
+				<div class="item">
+					<img src="path/to/your/images/11Dec-Ax0218765-Lynn.jpg" />
+					<p>11Dec-Ax0218765-Lynn.jpg</p>
+					<p>Price: $5</p>
+				</div>
+				<div class="item">
+					<img src="path/to/your/images/10Dec-Ax0216789-Lynn.jpg" />
+					<p>10Dec-Ax0216789-Lynn.jpg</p>
+					<p>Price: $5</p>
+				</div>
+				<div class="item">
+					<img src="path/to/your/images/11Dec-img6543-Frank.jpg" />
+					<p>11Dec-img6543-Frank.jpg</p>
+					<p>Price: $5</p>
+				</div>
+				<div class="item">
+					<img src="path/to/your/images/10Dec-img1098-David.jpg" />
+					<p>10Dec-img1098-David.jpg</p>
+					<p>Price: $5</p>
+				</div>
+				<div class="item">
+					<img src="path/to/your/images/11Dec-img8765-David.jpg" />
+					<p>11Dec-img8765-David.jpg</p>
+					<p>Price: $5</p>
+				</div>
+				<div class="item">
+					<img src="path/to/your/images/11Dec-img3210-Frank.jpg" />
+					<p>11Dec-img3210-Frank.jpg</p>
+					<p>Price: $5</p>
+				</div>
+				<div class="item">
+					<img src="path/to/your/images/10Dec-Ax0211098-Frank.jpg" />
+					<p>10Dec-Ax0211098-Frank.jpg</p>
+					<p>Price: $5</p>
+				</div>
+				<div class="item">
+					<img src="path/to/your/images/10Dec-Ax0218765-Sam.jpg" />
+					<p>10Dec-Ax0218765-Sam.jpg</p>
+					<p>Price: $5</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="orderSummary" class="summary">
+			<h2>Order Summary</h2>
+			<p>Total number of items: <span id="totalItems">12</span></p>
+			<p>Total price: $<span id="totalPrice">60.00</span></p>
+		</section>
+	</body>
+</html>

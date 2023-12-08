@@ -16,8 +16,7 @@ public class Artist {
 	public Artist() {
 	}
 
-	public Artist(long artistId, String name) {
-		this.artistId = artistId;
+	public Artist(String name) {
 		this.name = name;
 	}
 
