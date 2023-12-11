@@ -28,4 +28,9 @@ public class TransactionService {
 		
 		return transactionRepo.findByArtistNameAndDate(name, date);
 	}
+	
+	public List<Transaction> findByArtistName(String name){
+		
+		return transactionRepo.findByArtworkArtistName(name);
+	}
 }

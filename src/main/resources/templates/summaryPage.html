@@ -3,8 +3,130 @@
 <head>
 <meta charset="UTF-8">
 <title>Summary Page</title>
+<style>
+table {
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+td, th {
+	border: 1px solid #999;
+	padding: 8px;
+	text-align: left;
+	text-align: center;
+}
+
+th {
+	background-color: #f2f2f2;
+}
+</style>
 </head>
 <body>
-<div th:text="${davidArtTotal}"></div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<table>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<th>David</th>
+			<th>Frank</th>
+			<th>James</th>
+			<th>Lynn</th>
+			<th>Sam</th>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<th>Qty Submitted:</th>
+			<td><div th:text="${davidArtTotal}"></div></td>
+			<td><div th:text="${frankArtTotal}"></div></td>
+			<td><div th:text="${jamesArtTotal}"></div></td>
+			<td><div th:text="${lynnArtTotal}"></div></td>
+			<td><div th:text="${samArtTotal}"></div></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<th>Total Qty Sold (Date)</th>
+			<td></td>
+			<th>David</th>
+			<th>Frank</th>
+			<th>James</th>
+			<th>Lynn</th>
+			<th>Sam</th>
+		</tr>
+		<tr>
+			<th>9-Dec</th>
+			<td></td>
+			<td><div th:text="${dec9Sold}"></div></td>
+			<td></td>
+			<td><div th:text="${david9Sold}"></div></td>
+			<td><div th:text="${frank9Sold}"></div></td>
+			<td><div th:text="${james9Sold}"></div></td>
+			<td><div th:text="${lynn9Sold}"></div></td>
+			<td><div th:text="${sam9Sold}"></div></td>
+		</tr>
+		<tr>
+			<th>10-Dec</th>
+			<td></td>
+			<td><div th:text="${dec10Sold}"></div></td>
+			<td></td>
+			<td><div th:text="${david10Sold}"></div></td>
+			<td><div th:text="${frank10Sold}"></div></td>
+			<td><div th:text="${james10Sold}"></div></td>
+			<td><div th:text="${lynn10Sold}"></div></td>
+			<td><div th:text="${sam10Sold}"></div></td>
+		</tr>
+		<tr>
+			<th>11-Dec</th>
+			<td></td>
+			<td><div th:text="${dec11Sold}"></div></td>
+			<td></td>
+			<td><div th:text="${david11Sold}"></div></td>
+			<td><div th:text="${frank11Sold}"></div></td>
+			<td><div th:text="${james11Sold}"></div></td>
+			<td><div th:text="${lynn11Sold}"></div></td>
+			<td><div th:text="${sam11Sold}"></div></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<th>Sold/Artist:</th>
+			<td><div th:text="${davidTotalSold}"></div></td>
+			<td><div th:text="${frankTotalSold}"></div></td>
+			<td><div th:text="${jamesTotalSold}"></div></td>
+			<td><div th:text="${lynnTotalSold}"></div></td>
+			<td><div th:text="${samTotalSold}"></div></td>
+		</tr>
+	</table>
 </body>
 </html>

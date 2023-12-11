@@ -13,7 +13,8 @@ public interface TransactionRepo extends JpaRepository<Transaction, Long> {
 
 	public List<Transaction> findByDate(String date);
 
-	@Query("SELECT Transaction FROM Transaction t LEFT JOIN Artwork a ON t.artwork.artworkId = a.artworkId LEFT JOIN Artist r ON a.artist.name = r.name WHERE r.name = :name AND t.date = :date")
+	@Query("SELECT t FROM Transaction t LEFT JOIN Artwork a ON t.artwork.artworkId = a.artworkId LEFT JOIN Artist r ON a.artist.name = r.name WHERE r.name = :name AND t.date = :date")
 	public List<Transaction> findByArtistNameAndDate(String name, String date);
 
+	public List<Transaction> findByArtworkArtistName(String name);
 }
