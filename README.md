@@ -1,4 +1,4 @@
-# HTML Data Extractor
+# Text and HTML File Data Extractor
 - A Spring Boot application to experiment with extraction, pre-processing, and summarization of data from text and HTML files
 - The example scenario for this project is of an artwork order system and the output summarizes the HTML pages of the orders that have been made on different days
 ---
